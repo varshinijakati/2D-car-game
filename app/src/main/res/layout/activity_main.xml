@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    android:gravity="center"
+    android:background="@drawable/mmbg"
+    tools:context=".Normal">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Score : 0"
+        android:textAlignment="center"
+        android:textSize="28sp" />
+
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="Start"
+        app:backgroundTint="#F0397C" />
+
+
+        <Button
+        android:id="@+id/backButton"
+        android:layout_width="104dp"
+        android:layout_height="38dp"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="BACK"
+        app:backgroundTint="#F44336" />
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Logout"
+            app:backgroundTint="#9C27B0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="81dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backgroundButton"
+            android:layout_width="142dp"
+            android:layout_height="65dp"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="background"
+            app:backgroundTint="#F0397C" />
+
+
+        <ImageView
+            android:id="@+id/instructionsButton"
+            android:layout_width="54dp"
+            android:layout_height="49dp"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/question" />
+
+        <ImageView
+            android:id="@+id/pauseBtn"
+            android:layout_width="54dp"
+            android:layout_height="49dp"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/pause" />
+
+        <ImageView
+            android:id="@+id/resumeBtn"
+            android:layout_width="54dp"
+            android:layout_height="49dp"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/play" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
